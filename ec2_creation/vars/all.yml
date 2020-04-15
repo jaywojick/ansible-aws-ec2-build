@@ -1,0 +1,24 @@
+---
+ec2_config:
+    region: us-east-1
+    zone: us-east-1b
+    keypair: jay_ansible_east1
+    # instance_type: m5.4xlarge
+    instance_type: m4.xlarge
+    # image: ami-0c322300a1dd5dc79 #redhat
+    image: ami-02eac2c0129f6376b #centos7
+#     image: ami-02eac2c0129f6376b
+    vpc_subnet_id: subnet-8dac81a2
+    group: jay-sc-ansible
+    count: 3
+    assign_public_ip: true
+    volume_size: 20
+    volumes:
+        - device_name: /dev/sdb
+          volume_type: io1
+          iops: 1000
+          volume_size: 100
+          delete_on_termination: true
+    # instance_tag_name: Anisble-broker-test
+    remote_user: centos
+    ssh_path: /Users/jwojick/.ssh/jay_ansible_east1.pem

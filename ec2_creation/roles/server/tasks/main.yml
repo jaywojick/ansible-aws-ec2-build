@@ -1,0 +1,24 @@
+---
+
+# - name: install a list of packages installed
+#   yum:
+#     name: "{{ packages }}"
+#   vars:
+#     packages:
+#       - httpd
+#       - httpd-tools
+#       - nano
+-
+  file:
+    mode: 0777
+    owner: cp-kafka
+    path: "{{ item }}"
+    state: directory
+  name: "ansible create multiple EBS Volumes Dir"
+  with_items:
+    - data0
+    - data1
+    - data2
+    - data3
+    - data4
+    - data5
