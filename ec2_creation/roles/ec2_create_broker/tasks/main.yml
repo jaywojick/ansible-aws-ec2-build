@@ -1,4 +1,6 @@
 ---
+
+
 # tasks file for ec2_creation
 - name: Create Broker instance with Volumes
   ec2:
@@ -16,22 +18,27 @@
         delete_on_termination: true
       # - device_name: /dev/sdb
       #   volume_type: io1
-      #   iops: 1000
+      #   iops: 100
       #   volume_size: 100
       #   delete_on_termination: true
       # - device_name: /dev/sdc
       #   volume_type: io1
-      #   iops: 1000
+      #   iops: 100
+      #   volume_size: 100
+      #   delete_on_termination: true
+      # - device_name: /dev/sde
+      #   volume_type: io1
+      #   iops: 100
       #   volume_size: 100
       #   delete_on_termination: true
       # - device_name: /dev/sdd
       #   volume_type: io1
-      #   iops: 1000
+      #   iops: 100
       #   volume_size: 100
       #   delete_on_termination: true
     count: "{{ec2_config.count}}"
     wait: yes
     instance_tags:
 #      Name: "{{ec2_config.instance_tag_name}}"
-      Name: Ansible_Broker3_jay
+      Name: Ansible_Broker_jay_upgrade-5.0.1
   register: ec2

@@ -8,17 +8,25 @@
 #       - httpd
 #       - httpd-tools
 #       - nano
--
+
+- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+  user:
+    name: cp-kafka
+    comment: Kafka User
+    uid: 1040
+    group: cp-kafka
+
   file:
     mode: 0777
     owner: cp-kafka
     path: "{{ item }}"
     state: directory
-  name: "ansible create multiple EBS Volumes Dir"
-  with_items:
+-  name: "ansible create multiple EBS Volumes Dir"
+   with_items:
     - data0
     - data1
     - data2
     - data3
     - data4
+    - data5
     - data5
