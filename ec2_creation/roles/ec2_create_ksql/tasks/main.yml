@@ -18,5 +18,5 @@
     wait: yes
     instance_tags:
       # Name: "{{ec2_config.instance_tag_name}}"
-      Name: Ansible_KSQL_jay_upgrade-5.0.1
+      Name: Ansible_KSQL_jay
   register: ec2
