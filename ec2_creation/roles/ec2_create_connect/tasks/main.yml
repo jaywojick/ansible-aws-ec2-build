@@ -18,4 +18,4 @@
     wait: yes
     instance_tags:
       # Name: "{{ec2_config.instance_tag_name}}"
-      Name: Ansible_Connect_jay
+      Name: Connect_jay_2

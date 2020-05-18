@@ -7,10 +7,10 @@
   vars_files:
     - vars/all.yml
   roles:
-    - ec2_create_zk
-    - ec2_create_broker
-    - ec2_create_C3
-    - ec2_create_ksql
+    # - ec2_create_zk
+    # - ec2_create_broker
+    # - ec2_create_C3
+    # - ec2_create_ksql
     - ec2_create_connect
     # - ec2_create_SR
     # - server

@@ -19,5 +19,5 @@
     wait: yes
     instance_tags:
       # Name: "{{ec2_config.instance_tag_name}}"
-      Name: Ansible_C3_jay
+      Name: C3_jay
   register: ec2

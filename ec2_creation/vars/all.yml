@@ -10,7 +10,7 @@ ec2_config:
 #     image: ami-02eac2c0129f6376b
     vpc_subnet_id: subnet-8dac81a2
     group: jay-sc-ansible
-    count: 3
+    count: 2
     assign_public_ip: true
     volume_size: 20
     volumes:

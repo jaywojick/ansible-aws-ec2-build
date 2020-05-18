@@ -18,5 +18,5 @@
     wait: yes
     instance_tags:
       # Name: "{{ec2_config.instance_tag_name}}"
-      Name: Ansible_KSQL_jay
+      Name: KSQL_jay
   register: ec2
