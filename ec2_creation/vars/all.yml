@@ -8,10 +8,10 @@ ec2_config:
     # image: ami-0c322300a1dd5dc79 #redhat
     image: ami-02eac2c0129f6376b #centos7
 #     image: ami-02eac2c0129f6376b
-    vpc_subnet_id: subnet-8dac81a2
+    vpc_subnet_id: {your-subnet}
     group: {your-sec-group}
-    count: 2
-    assign_public_ip: true
+    count: 2 #count of vms if not defined in role
+    assign_public_ip: true 
     volume_size: 20
     volumes:
         - device_name: /dev/sdb
@@ -21,4 +21,4 @@ ec2_config:
           delete_on_termination: true
     # instance_tag_name: Anisble-broker-test
     remote_user: centos
-    ssh_path: /Users/jwojick/.ssh/jay_ansible_east1.pem
+    ssh_path: {path to you .pem}
