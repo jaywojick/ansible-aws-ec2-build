@@ -2,14 +2,14 @@
 ec2_config:
     region: us-east-1
     zone: us-east-1b
-    keypair: jay_ansible_east1
+    keypair: {your_key}
     # instance_type: m5.4xlarge
     instance_type: m4.xlarge
     # image: ami-0c322300a1dd5dc79 #redhat
     image: ami-02eac2c0129f6376b #centos7
 #     image: ami-02eac2c0129f6376b
     vpc_subnet_id: subnet-8dac81a2
-    group: jay-sc-ansible
+    group: {your-sec-group}
     count: 2
     assign_public_ip: true
     volume_size: 20
