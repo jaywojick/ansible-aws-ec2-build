@@ -47,8 +47,8 @@ ec2_config:
 
 - Export your Amazon credential to environment variables;
 ```sh
-$ export AWS_ACCESS_KEY_ID=YOURKEYID
-$ export AWS_SECRET_ACCESS_KEY=YOUSECRETKEY
+$ export AWS_ACCESS_KEY_ID=<YOURKEYID>
+$ export AWS_SECRET_ACCESS_KEY=<YOUSECRETKEY>
 ```
 - Inside /etc/ansible/ec2_creation Run the command: 
 ```sh
