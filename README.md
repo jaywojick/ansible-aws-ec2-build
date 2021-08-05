@@ -30,11 +30,11 @@ ec2_config:
     zone: us-west-2c
     #Change it according the name that you put in Amazon
     keypair: ansible
-    instance_type: t1.micro
+    instance_type: <your-instance-type>
     #It create a Ubuntu 14.04LTS
     image: ami-6989a659
     #Your subnet
-    vpc_subnet_id: subnet-e7b7f8be
+    vpc_subnet_id: <your-subnet>
     #An security group name created at Amazon
     group: [lamp]
     assign_public_ip: true
@@ -42,7 +42,7 @@ ec2_config:
     instance_tag_name: TagNomeApp
     remote_user: ubuntu
     #The path to your local ssh file
-    ssh_path: ~/.ssh/id_ansible
+    ssh_path: ~/.ssh/<your .pem>
 ```
 
 - Export your Amazon credential to environment variables;
@@ -54,6 +54,3 @@ $ export AWS_SECRET_ACCESS_KEY=YOUSECRETKEY
 ```sh
 $ ansible-playbook -i hosts playbook.yml --private-key=[your ssh key file] -vvvv
 ```
-
-# More information:
-Look this [video](https://www.youtube.com/watch?v=sffE27WdUY8) for more information (audio PT-BR and subtitles in EN) or open an issue.
