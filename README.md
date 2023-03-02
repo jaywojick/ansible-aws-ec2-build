@@ -26,10 +26,10 @@ $ ssh-keygen -t rsa -f ~/.ssh/id_ansible
 ```yml
 ---
 ec2_config:
-    region: us-west-2
-    zone: us-west-2c
+    region: us-east-1
+    zone: us-east-1a
     #Change it according the name that you put in Amazon
-    keypair: ansible
+    keypair: <your.pem> 
     instance_type: <your-instance-type>
     #It create a Ubuntu 14.04LTS
     image: ami-6989a659
@@ -40,9 +40,9 @@ ec2_config:
     assign_public_ip: true
     volume_size: 8
     instance_tag_name: TagNomeApp
-    remote_user: ubuntu
+    remote_user: centos #change if needed
     #The path to your local ssh file
-    ssh_path: ~/.ssh/<your .pem>
+    ssh_path: ~/.ssh/<your.pem>
 ```
 
 - Export your Amazon credential to environment variables;
