@@ -40,5 +40,5 @@
     wait: yes
     instance_tags:
 #      Name: "{{ec2_config.instance_tag_name}}"
-      Name: Broker_jay
+      Name: Broker #update name
   register: ec2
