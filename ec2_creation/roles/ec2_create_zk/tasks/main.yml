@@ -19,5 +19,5 @@
     wait: yes
     instance_tags:
       # Name: "{{ec2_config.instance_tag_name}}"
-      Name: ZK_jay
+      Name: Zookeeper #update name
   register: ec2
