@@ -19,5 +19,5 @@
     wait: yes
     instance_tags:
       # Name: "{{ec2_config.instance_tag_name}}"
-      Name: rest_jay
+      Name: rest  #update name
   register: ec2
