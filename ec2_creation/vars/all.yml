@@ -2,7 +2,7 @@
 ec2_config:
     region: us-east-1
     zone: us-east-1b
-    keypair: {your_key}
+    keypair: {your_key} #update with your pem file
     # instance_type: m5.4xlarge
     instance_type: m4.xlarge
     # image: ami-0c322300a1dd5dc79 #redhat
@@ -10,7 +10,7 @@ ec2_config:
 #     image: ami-02eac2c0129f6376b
     vpc_subnet_id: {your-subnet}
     group: {your-sec-group}
-    count: 2 #count of vms if not defined in role
+    count: 3 #count of vms if not defined in role
     assign_public_ip: true 
     volume_size: 20
     volumes:
