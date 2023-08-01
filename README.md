@@ -50,6 +50,8 @@ ec2_config:
 $ export AWS_ACCESS_KEY_ID=<YOURKEYID>
 $ export AWS_SECRET_ACCESS_KEY=<YOUSECRETKEY>
 /usr/local/bin/aws  sts get-caller-identity
+or
+export AWS_ACCESS_KEY_ID=<YOURKEYID> && export AWS_SECRET_ACCESS_KEY=<YOUSECRETKEY> && /usr/local/bin/aws  sts get-caller-identity
 ```
 - Inside /etc/ansible/ec2_creation Run the command: 
 ```sh
