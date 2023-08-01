@@ -54,4 +54,6 @@ $ export AWS_SECRET_ACCESS_KEY=<YOUSECRETKEY>
 - Inside /etc/ansible/ec2_creation Run the command: 
 ```sh
 $ ansible-playbook -i hosts playbook.yml --private-key=[your ssh key file] -vvvv
+or
+$ ansible-playbook -i hosts playbook.yml
 ```
