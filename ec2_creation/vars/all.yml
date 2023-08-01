@@ -19,6 +19,9 @@ ec2_config:
           iops: 1000
           volume_size: 100
           delete_on_termination: true
-    # instance_tag_name: Anisble-broker-test
+    instance_tags: 
+      Owner_Email: 'your-email'
+      owner_email:  'your-email'
     remote_user: centos
     ssh_path: {path to you .pem}
+
